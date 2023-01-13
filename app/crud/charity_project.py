@@ -92,7 +92,7 @@ class CRUDCharityProject(
         await session.delete(db_object)
         await session.commit()
         return db_object
-    
+
     async def get_projects_by_completion_rate(
         self,
         session: AsyncSession
